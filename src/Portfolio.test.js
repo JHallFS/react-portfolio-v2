@@ -20,5 +20,5 @@ it('renders', () => {
 	act(() => {
 		render(<Portfolio />, container);
 	});
-	expect(container.textContent).toBe('Test');
+	expect(container.textContent).toBe('Hello World!');
 });

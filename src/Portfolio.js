@@ -5,7 +5,7 @@ class Portfolio extends Component {
 	render() {
 		return (
 			<Router>
-				Test
+				Hello World!
 			</Router>
 		);
 	}

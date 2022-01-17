@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import Portfolio from './Portfolio';
 import './css/index.css';
 import reportWebVitals from './reportWebVitals';
+import store from './store/store';
+import { Provider } from 'react-redux';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Portfolio />
+	<Provider store={store}>
+		<Portfolio />
+	</Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
