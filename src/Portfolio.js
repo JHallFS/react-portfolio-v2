@@ -1,8 +1,13 @@
 import { Component } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 class Portfolio extends Component {
 	render() {
-		return <h1>Test</h1>;
+		return (
+			<Router>
+				Test
+			</Router>
+		);
 	}
 }
 

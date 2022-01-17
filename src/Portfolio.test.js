@@ -1,4 +1,6 @@
-import { unmountComponentAtNode } from "react-dom";
+import { render, unmountComponentAtNode } from "react-dom";
+import { act } from 'react-dom/test-utils';
+import Portfolio from './Portfolio';
 
 let container = null;
 beforeEach(() => {
@@ -14,6 +16,9 @@ afterEach(() => {
   container = null;
 });
 
-it('tests successfully', () => {
-	expect(1).toBe(1);
+it('renders', () => {
+	act(() => {
+		render(<Portfolio />, container);
+	});
+	expect(container.textContent).toBe('Test');
 });
