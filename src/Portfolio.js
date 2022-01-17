@@ -1,11 +1,14 @@
 import { Component } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/home';
 
 class Portfolio extends Component {
 	render() {
 		return (
 			<Router>
-				Hello World!
+				<Routes>
+					<Route path="/" element={<Home/>} />
+				</Routes>
 			</Router>
 		);
 	}
