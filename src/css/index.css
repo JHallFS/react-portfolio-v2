@@ -1,5 +1,15 @@
 body {
   margin: 0;
+  background-color: black;
+  color: white;
+}
+
+nav img {
+  height: 70px;
+  width: 100px;
+}
+nav a {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=index.css.map */
