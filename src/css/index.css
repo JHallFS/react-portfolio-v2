@@ -4,12 +4,45 @@ body {
   color: white;
 }
 
+nav {
+  background-color: rgba(137, 204, 210, 0.85);
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+}
 nav img {
   height: 70px;
   width: 100px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-nav a {
-  margin-right: 10px;
+nav .nav-toggle {
+  display: none;
+}
+nav label {
+  float: right;
+}
+nav ul {
+  padding-bottom: 15px;
+  border-radius: 0px 0px 0px 10px;
+  list-style: none;
+  float: right;
+  display: none;
+}
+nav ul a {
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  text-decoration: none;
+  border-style: solid;
+  border-radius: 10px;
+}
+nav ul a:hover {
+  background-color: grey;
+  color: black;
+}
+nav .nav-toggle:checked ~ ul {
+  display: block;
 }
 
 /*# sourceMappingURL=index.css.map */

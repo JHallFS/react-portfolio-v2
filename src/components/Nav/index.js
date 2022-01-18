@@ -7,10 +7,22 @@ export default class Nav extends Component {
 		return (
 			<nav>
 				<img id='nav-logo' src={logo} alt='Logo'/>
-				<Link to='/'>Home</Link>
-				<Link to='/'>Skills</Link>
-				<Link to='/'>Examples</Link>
-				<Link to='/'>Comtact</Link>
+				<input type='checkbox' className='nav-toggle' id='nav-toggle' />
+				<label htmlFor="nav-toggle" className='toggle-label'><span>X</span></label>
+				<ul>
+					<li>
+						<Link to='/'>Home</Link>
+					</li>
+					<li>
+						<Link to='/'>About Me</Link>
+					</li>
+					<li>
+						<Link to='/'>Skills</Link>
+					</li>
+					<li>
+						<Link to='/'>Examples</Link>
+					</li>
+				</ul>
 			</nav>
 		);
 	}

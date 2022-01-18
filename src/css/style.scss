@@ -1,3 +1,5 @@
+$primary: rgba(137, 204, 210, .85);
+
 body {
 	margin: 0;
 	background-color: black;
@@ -5,12 +7,47 @@ body {
 };
 
 nav {
+	background-color: $primary;
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+
 	img {
 		height: 70px;
 		width: 100px;
+		margin-top: 15px;
+		margin-bottom: 15px;
 	}
-	
-	a {
-		margin-right: 10px;
+
+	.nav-toggle {
+		display: none;
+	}
+
+	label {
+		float: right
+	}
+
+	ul {
+		padding-bottom: 15px;
+		border-radius: 0px 0px 0px 10px;
+		list-style: none;
+		float: right;
+		display: none;
+		
+		a {
+			display: block;
+			margin: 5px;
+			padding: 10px;
+			text-decoration: none;
+			border-style: solid;
+			border-radius: 10px;
+		}
+		a:hover {
+			background-color: grey;
+			color: black;
+		}
+	}	
+	.nav-toggle:checked ~ ul {
+		display: block;
 	}
 };
